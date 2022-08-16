@@ -5,4 +5,13 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   get "/acc.png",  to: "static_page#access"
+
+  #
+  # 管理画面
+  #
+  namespace 'admin' do
+    root to: 'clients#index'
+    resources :clients, only: [:index]
+    resources :accesses, only: [:index]
+  end
 end
