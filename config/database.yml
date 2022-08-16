@@ -82,5 +82,5 @@ test:
 production:
   <<: *default
   database: access_rails_production
-  username: access_rails
-  password: <%= ENV["ACCESS_RAILS_DATABASE_PASSWORD"] %>
+  #username: access_rails
+  #password: <%= ENV["ACCESS_RAILS_DATABASE_PASSWORD"] %>
